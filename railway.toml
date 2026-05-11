@@ -6,3 +6,7 @@ dockerfilePath = "Dockerfile"
 startCommand = "python -m app.main"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
+
+[[deploy.envVars]]
+name = "PYTHONPATH"
+value = "/app"
